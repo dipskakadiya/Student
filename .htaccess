@@ -1,0 +1,9 @@
+<IfModule mod_rewrite.c>
+    RewriteEngine On
+        RewriteCond $1 !^(index\.php|images|css|assets|js|robots\.txt)
+    RewriteRule ^(.*)$ /Student/index.php?/$1 [L]
+</IfModule>
+
+<IfModule !mod_rewrite.c>
+    ErrorDocument 404 /testmysql.php
+</IfModule>
