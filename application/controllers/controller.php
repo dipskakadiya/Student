@@ -37,6 +37,10 @@ class controller extends CI_Controller {
 		$this -> data['CityList'] = $this -> city_state_country_model -> getCity($stateID);
 		echo json_encode($this -> data);
 	}
+	
+	public function sqlquery(){
+		$this -> load -> view('assign3');
+	}
 
 	public function stringsort() {
 		if (isset($_POST['btnsave'])) {

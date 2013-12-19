@@ -76,26 +76,33 @@ var Index = function() {
 				ignore : "",
 				rules : {
 					studname : {
-						required : true
+						required : true,
+						maxlength : 50
 					},
 					email : {
 						required : true,
-						email : true
+						email : true,
+						maxlength : 50
 					},
 					dob : {
 						required : true,
 					},
 					phoneno : {
 						required : true,
+						maxlength : 13,
+						digits : true
 					},
 					collegename : {
 						required : true,
+						maxlength : 50
 					},
 					address1 : {
 						required : true,
+						maxlength : 100
 					},
 					address2 : {
-						required : true,
+						required : false,
+						maxlength : 100
 					},
 					country : {
 						required : true
@@ -138,6 +145,9 @@ var Index = function() {
 					error1.hide();
 				}
 			});
+			
+			
+			
 		},
 		Inituidesign : function() {
 			$("#tab2link").click(function() {

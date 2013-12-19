@@ -35,9 +35,14 @@
 									<a href="<?php echo base_url() . "controller"; ?>">Assignment 1</a>
 									|
 									<a href="<?php echo base_url() . "controller/stringsort"; ?>">Assignment 2</a>
+									|
+									<a href="<?php echo base_url() . "controller/sqlquery"; ?>">Assignment 3</a>
 								</li>
 							</ul>
-							<small> Write a simple PHP program which takes a string as input and breaks the string into words and prints them in ascending order of word length. Use dictionary order in case of a tie. Don’t use any native PHP functions. - Example: Deepanshu is the best programmer in the world - Output: in is the the best world Deepanshu programmer</small>
+							<small> Write a simple PHP program which takes a string as input and breaks the string into words and prints them in ascending order of word length. 
+							<br/>Use dictionary order in case of a tie. Don’t use any native PHP functions. <br/>
+							<b>Example:</b> Deepanshu is the best programmer in the world 
+							<br/><b>Output:</b> in is the the best world Deepanshu programmer</small>
 						</div>
 					</div>
 					<!-- END PAGE HEADER-->
@@ -104,7 +109,7 @@
 		<script type="text/javascript" src="<?php echo base_url() . "assets/plugins/jquery-validation/dist/additional-methods.min.js"; ?>"></script>
 
 		<!-- Page Level Jquery  -->
-		<script src="<?php echo base_url() . "assets/scripts/index.js"; ?>"></script>
+		<script src="<?php echo base_url() . "assets/scripts/string.js"; ?>"></script>
 		<script>
 			var App = function() {
 				return {
@@ -117,9 +122,7 @@
 				};
 			}();
 			jQuery(document).ready(function() {
-				Index.InitTable();
 				Index.InitValidation();
-				Index.Inituidesign();
 			});
 		</script>
 

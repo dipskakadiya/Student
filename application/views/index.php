@@ -38,15 +38,21 @@
 									<a href="<?php echo base_url() . "controller"; ?>">Assignment 1</a>
 									|
 									<a href="<?php echo base_url() . "controller/stringsort"; ?>">Assignment 2</a>
+									|
+									<a href="<?php echo base_url() . "controller/sqlquery"; ?>">Assignment 3</a>
 								</li>
 							</ul>
-							<small> Create a simple student info system – add, edit, list - Add should take a page where I can enter (Name, email, dob, phone, college, address, city state, country). When we click on Save, show validation warnings and then put the fields in the database. - List should be able to show all the students in the database - Edit should be able to edit a student (Use PHP, Mysql and preferably Ajax. Make a usable interface as well.) </small> 
+							<small> Create a simple student info system – add, edit, list 
+							<br/>- Add should take a page where I can enter (Name, email, dob, phone, college, address, city state, country). 
+							<br/>- When we click on Save, show validation warnings and then put the fields in the database. 
+							<br/>- List should be able to show all the students in the database 
+							<br/>- Edit should be able to edit a student (Use PHP, Mysql and preferably Ajax. Make a usable interface as well.) </small> 
 							
 						</div>
 					</div>
 					<!-- END PAGE HEADER-->
 					<!-- BEGIN PAGE CONTENT-->
-					<div class="row-fluid">
+					<div class="row-fluid" style="margin-top:20px;">
 						<div class="span12">
 							<div class="tabbable portlet-tabs">
 								<ul class="nav nav-tabs">
